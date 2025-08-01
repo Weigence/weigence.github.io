@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work in Progress</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #ecf0f1;
+            --accent-color: #e74c3c;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: var(--font-family);
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .progress {
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            background-color: var(--accent-color);
+            transition: width 0.5s ease;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 Work in Progress 🚧</h1>
+        <p>We're working hard to bring you something amazing. Stay tuned!</p>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <footer>© 2025 Weigence - All Rights Reserved</footer>
+    </div>
+    <script>
+        (function updateProgress() {
+            const progressBar = document.getElementById('progressBar');
+            let progress = 0;
+
+            setInterval(() => {
+                progress = (progress + 10) % 110; // Loop back to 0 after 100%
+                progressBar.style.width = `${progress}%`;
+            }, 500);
+        })();
+    </script>
+</body>
+</html>
