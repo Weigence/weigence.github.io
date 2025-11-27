@@ -33,6 +33,12 @@ body {
     max-width: 600px;
 }
 
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
