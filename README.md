@@ -1,18 +1,35 @@
 # weigence.github.io
 
-## Development
-
-Run the following command to start the development server:
+## 🚀 Quick Start
 
 ```bash
-python -m http.server 6969
+# Install the dependency packages
+npm install
+
+# Start the development server on http://localhost:3000
+npm run dev
+
+# Mobile preview
+npm run dev -- --host
 ```
 
-> [!TIP]
-> You need to use `ifconfig` command to find the IP address of your host machine.
-> This is useful for testing changes directly on smartphones without putting them into production.
+## 🛠 Update the dependencies
 
-## Submodule Management
+```bash
+# Install npm-check-updates
+npm install -g npm-check-updates
+
+# Show the outdated dependencies
+ncu
+
+# Update the dependencies
+ncu -u
+
+# Install the updated dependencies
+npm install
+```
+
+## 📂 Submodule Management
 
 ```bash
 # Add Official Weigence Embeddings as submodule
