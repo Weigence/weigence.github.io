@@ -6,6 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', (): void => {
+  // Set current year in footer
+  const yearElement: HTMLElement | null = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+
   // Create a timeline for coordinated animations
   const tl: GSAPTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
