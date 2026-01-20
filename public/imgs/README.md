@@ -1,0 +1,2 @@
+# embeddings
+Official Weigence Embeddings

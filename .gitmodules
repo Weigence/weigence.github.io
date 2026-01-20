@@ -1,0 +1,3 @@
+[submodule "public/imgs"]
+	path = public/imgs
+	url = https://github.com/Weigence/embeddings.git
