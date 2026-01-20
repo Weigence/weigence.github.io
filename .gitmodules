@@ -1,3 +1,3 @@
-[submodule "public/imgs"]
-	path = public/imgs
+[submodule "public/embeddings"]
+	path = public/embeddings
 	url = https://github.com/Weigence/embeddings.git
