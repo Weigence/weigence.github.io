@@ -16,7 +16,7 @@ python -m http.server 6969
 
 ```bash
 # Add Official Weigence Embeddings as submodule
-git submodule add https://github.com/Weigence/embeddings.git public/imgs
+git submodule add https://github.com/Weigence/embeddings.git public/embeddings
 
 # Sync and update submodule
 git submodule sync
