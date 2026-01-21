@@ -32,13 +32,17 @@ npm install
 ## 📂 Submodule Management
 
 ```bash
-# Add Official Weigence Embeddings as submodule
+# Add submodule (first time only)
 git submodule add https://github.com/Weigence/embeddings.git public/embeddings
 
-# Sync and update submodule
-git submodule sync
+# Initialize submodule after cloning the repository
 git submodule update --init --recursive
 
-# Merge
+# Update submodule to latest commit from remote
 git submodule update --remote --merge
+
+# After updating submodule, commit the changes
+git add public/embeddings
+git commit -m "Update embeddings submodule"
+git push origin main
 ```
