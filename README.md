@@ -38,4 +38,7 @@ git submodule add https://github.com/Weigence/embeddings.git public/embeddings
 # Sync and update submodule
 git submodule sync
 git submodule update --init --recursive
+
+# Merge
+git submodule update --remote --merge
 ```
