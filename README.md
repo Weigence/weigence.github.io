@@ -46,3 +46,10 @@ git add public/embeddings
 git commit -m "Update embeddings submodule"
 git push origin main
 ```
+
+## 🚀 Trigger GitHub Actions without changes
+
+```bash
+git commit --allow-empty -m "Trigger GitHub Actions"
+git push origin main
+```
